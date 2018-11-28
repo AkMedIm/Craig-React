@@ -1,0 +1,135 @@
+.listings-page {
+  background: #fff;
+  #filter {
+    padding: 30px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .showingMake{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 0.8rem;
+    }
+    select {
+      font-size: 1rem;
+      background: #fff;
+      border-radius: 5px;
+      padding: 7px 0;
+      min-width: 100px;
+      border: 2px solid #adbed2;
+      color: #1b1b1b;
+      margin-right: 20px;
+    }
+    &.button {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    .primary-btn {
+      border: 1px solid skyblue;
+      padding: 10px 20px;
+      color: #fff;
+      background: #2a7ddd;
+      &:hover {
+        color: #000;
+        background: #fff;
+      }
+    }
+    .reset-btn {
+      border: 1px solid lightgrey;
+      background: #fff;
+      &:hover {
+        color: #fff;
+        background: lightgrey;
+      }
+    }
+    .primary-btn,
+    .reset-btn {
+      border-radius: 5px;
+      margin-right: 20px;
+      cursor: pointer;
+      padding: 10px 20px;
+    }
+  }
+
+  #list-view {
+    background: #f7f8fa;
+    padding: 20px 0;
+    .white-box {
+      padding: 20px 20px;
+      background: white;
+    }
+    .change-view {
+      display: flex;
+      flex-direction: row;
+    }
+    .all-items{
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 20px 20px;
+      .item{
+        -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.26);
+-moz-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.26);
+box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.26);
+        border-radius: 5px;
+        overflow: hidden;
+        .image{
+          background: url("/img/ferrari.jpg");
+          height: 250px;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          position: relative;
+          padding: 10px;
+          .price{
+            background: #fff;
+            position: absolute;
+            padding: 6px 6px;
+            color: green;
+            border-radius: 3px;
+          }
+
+        }
+        .details{
+          padding: 10px;
+          position: relative;
+          .fa-star-o{
+            color: lightgrey;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            font-size: 1.4rem;
+            &:hover{
+              color: gold;
+              cursor: pointer;
+            }
+          }
+          h6{
+            text-transform: capitalize;
+            font-size: 0.7rem;
+            color:#565d68;
+          }
+          h5{
+            text-transform: capitalize;
+            line-height: 1.5;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color:#27292d;
+
+
+          }
+        }
+      }
+    }
+  }
+}
